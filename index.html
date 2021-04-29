@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Diestro - Portfolio</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box"></div>
+        <div class="logo">
+        </div>
+        <input type="checkbox" id="nav-check" style="display: none;">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav" id="myDIV">
+            <ul>
+                <li class="btn active"><a href="#home">Home</a></li>
+                <li class="btn"><a href="#profiles">Profile</a></li>
+                <li class="btn"><a href="#education">Education</a></li>
+                <li class="btn">Portfolio</li>
+                <li class="btn">Contact</li>
+                <li class="btn">About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" id="home">
+        <img class="profile-img" src="img/profile-min.jpg">
+        <div class="name">
+            <p>Hello!</p>
+            <br>
+            <h1>
+                <a href="" class="typewrite" data-period="2000" style="text-decoration: none;"
+                    data-type='[ "Hi, I am Lawrenz!", "I am a BSIT Student.", "At Gordon College."]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
+            <p class="details">Currently studying Bachelor of Science in Information Technology at Gordon College
+                Olongapo.
+                I am an amateur graphic and layout artist. </p>
+            <a href="#main" class="btns" id="button" onclick="togglePopup()">Send a Message</a>
+        </div>
+        <div class="social">
+            <a href="https://bit.ly/2KaKLVO"><i class="fa fa-facebook"></i></a>
+            <a href="https://bit.ly/3kqZqZq"><i class="fa fa-twitter"></i></a>
+            <a href="https://bit.ly/35uyV0M"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div class="close" id=".close">+</div>
+                <h1>Message Us!</h1>
+                <br>
+                <form class="form">
+                    <input type="text" id="fname" name="firstname" placeholder="Email Address" pattern=".+@gmail.com"
+                        size="30" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number"
+                        pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:90px"
+                        required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile" id="profiles">
+
+    </div>
+
+    <div class="education" id="education">
+
+    </div>
+    
+</body>
+<script src="script/script.js"></script>
+
+</html>
